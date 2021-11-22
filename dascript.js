@@ -25,7 +25,7 @@ function dButton(e) {
     //document.getElementsByName("sponsorText")[0].value="";
     if (e.target.tagName == "BUTTON") {
         var dogName = e.target.name;
-        document.getElementById("sponsorText").innerHTML = "I want to sponsor " + e.target.name;
+        document.getElementById("sponsorText").innerText = e.target.name;
       
         //  document.getElementsByName("sponsorText")[0].placeholder = 'I want to sponsor ' + e.target.name;
       //  document.getElementById("sponsorTextBox") [0].placeholder = "I want to sponsor " + e.target.name;
