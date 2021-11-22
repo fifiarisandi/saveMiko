@@ -2,19 +2,102 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>SaveMiko! | Saving Dogs One Dog at a Time</title>
+        <title>SaveMiko! | Saving precious souls, one dog at a time</title>
+        <link rel="stylesheet" href="style3.css">
     </head>
+
+    <script src="dascript.js"></script>
+
     <body>
-        <div id="intro to doglist">
-            <h1>Pick your dog, and save a life!</h1>
-            <p>Here's the list of the dogs that are still looking for their furever family.
-                Will you be the one for them?
-            </p>
-            <p>Click on the Description to read more info on the dog and Select if you have made up your mind.</p>
+        <div class="header">
+            <div id="headerimg">
+                <img src="SaveMiko header.png">
+            </div>
         </div>
 
+        <div class="topnav">
+            <a><h3>Sponsorship summary</h3></a>
+            <!-- <a class="active" href="home.html">Home</a>
+            <a href="howtohelp.html">Sponsor a dog</a>
+            <a href="catalogue.html">Sponsor a dog</a> 
+            <a href="contact.html" style="float:right">Contact us</a> -->
+        </div>
 
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="UK">United Kingdom</option>
+                            <option value="Holland">The Netherlands</option>
+                            <option value="US">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="sponsorMessage">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <h3 id="sponsorText"></h3>
 
+                        <!--<input type="text" id="sponsorTextBox" name="sponsorText">-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="updates">Receive regular updates*</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="updates" name="updates">
+                            <option value="updateyes">Please send me regular updates</option>
+                            <option value="updateno">Do not send updates</option>
+                        </select>
+                        <p>*You may unsubscribe at anytime. By subscribing to our e-mail communication you agree to our privacy policy.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="checkbox" id="consent" name="consent" value="consented">
+                        <label for="consent">I understand the terms & conditions</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <p>Copyright ©2021 Fifi for End User Computing. All rights reserved.</p>
+        </div>
 
     </body>
 
