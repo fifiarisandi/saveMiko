@@ -1,43 +1,25 @@
-/*function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  } */
 
 
-/*let result = document.querySelector("#sponsorText");
-
-document.addEventListener('click', (e) => {
-    let element = e.target;
-    if(element.tagName == "BUTTON"){
-        result.innerText = `${element.id}: ${element.innerText}`;
-    }
-} */
-
- function clickedBtn() {
-    document.getElementById("dogsBtn").addEventListener("click", dButton(e));
-    //document.getElementById("dogsBtn").onclick = dButton;
-}
-
-function dButton(e) {
-    //document.getElementsByName("sponsorText")[0].value="";
-    if (e.target.tagName == "BUTTON") {
-        var dogName = e.target.name;
-        document.getElementById("sponsorText").innerText = e.target.name;
-      
-        //  document.getElementsByName("sponsorText")[0].placeholder = 'I want to sponsor ' + e.target.name;
-      //  document.getElementById("sponsorTextBox") [0].placeholder = "I want to sponsor " + e.target.name;
-    }
-}
-
-
-
- /* function inputSponsorTextBox() { 
-      
-
-    document.getElementById("sponsorTextBox").inputSponsorText = "button.id";
+function validateFields() {
+    //var errorMsg = "";
+    //var corrMsg = "Thank you for your contribution!";
+    var a = document.forms["checkoutForm"]["fname"].value;
+    let b = document.forms["checkoutForm"]["lname"].value;
+    let c = document.forms["checkoutForm"]["email"].value;
     
-      /*document.getElementById("demo").innerHTML = "Hello JavaScript!";
-  } */
+    if (a == "" || a == null) {
+        alert("First name must be filled");
+        //errorMsg = errorMsg + "First name must be filled <br>";
+        return false;
+    }
+    if (b == "" || b == null) {
+        alert("Last name must be filled");
+        //errorMsg = errorMsg + "Last name must be filled <br>";
+        return false;
+    }
+    if (c == "" || c == null) {
+        alert("Email must be filled");
+        //errorMsg = errorMsg + "Email must be filled <br>";
+        return false;
+    }
+}
