@@ -16,7 +16,7 @@
         </div>
 
         <div class="topnav">
-            <a><h3>Sponsorship summary</h3></a>
+            <a><h3>Sign up to sponsor</h3></a>
             <!-- <a class="active" href="home.html">Home</a>
             <a href="howtohelp.html">Sponsor a dog</a>
             <a href="catalogue.html">Sponsor a dog</a> 
@@ -27,29 +27,29 @@
             <form name="checkoutForm" action="/action_page.php" onsubmit="return validateFields()" method="post">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First name</label>
+                        <label for="fname">Username</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                        <input type="text" id="fname" name="firstname" placeholder="username">
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-25">
                         <label for="lname">Last name</label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="lname" name="lastname" placeholder="Your last name">
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-25">
                         <label for="email">Email</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="email" name="e-mail" placeholder="Your email">
+                        <input type="text" id="email" name="e-mail" placeholder="email">
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-25">
                         <label for="country">Country</label>
                     </div>
@@ -61,17 +61,26 @@
                             <option value="Other">Others</option>
                         </select>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-25">
-                        <label for="sponsorMessage">Message</label>
+                        <label for="sponsorMessage">Password</label>
                     </div>
                     <div class="col-75">
                         <!-- <h4 id="sponsorText"></h4> -->
-                        <input type="text" id="sponsorTextBox" name="sponsorText" value="I want to sponsor ">
+                        <input type="password" id="sponsorTextBox" name="sponsorText">
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-25">
+                        <label for="sponsorMessage">Confirm password</label>
+                    </div>
+                    <div class="col-75">
+                        <!-- <h4 id="sponsorText"></h4> -->
+                        <input type="password" id="sponsorTextBox" name="sponsorText">
+                    </div>
+                </div>
+                <!-- <div class="row">
                     <div class="col-25">
                         <label for="updates">Receive regular updates*</label>
                     </div>
@@ -82,15 +91,15 @@
                         </select>
                         <p>*You may unsubscribe at anytime. By subscribing to our e-mail communication you agree to our privacy policy.</p>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-75">
-                        <input type="checkbox" id="consent" value="yes">
-                        <label for="consent">I understand the terms & conditions.</label>
+                        <!-- <input type="checkbox" id="consent" value="yes"> -->
+                        <label for="consent">Already have an account? Login <a href="#">here</a></label>
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Sign up">
                 </div>
             </form>
         </div>
